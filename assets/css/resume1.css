@@ -1,0 +1,91 @@
+/* Preview section styling */
+@import url("https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+#preview-sc {
+  padding: 50px 0;
+}
+
+* {
+  font-family: "Cousine", monospace;
+}
+
+.preview-cnt {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.preview-image {
+  margin-right: unset;
+}
+
+.preview-item-name {
+  display: none;
+}
+
+.preview-cnt-l,
+.preview-cnt-r {
+  width: 48%;
+  padding: 20px;
+}
+
+.preview-cnt-l {
+  background-color: #4caf50; /* Green background */
+  color: white;
+  width: 100%;
+}
+
+.preview-cnt-r {
+  background-color: #f2f2f2; /* Light gray background */
+  width: 100%;
+}
+
+.preview-blk-title h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.preview-blk-list {
+  margin-top: 20px;
+}
+
+.preview-item-val {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Print button styling */
+.print-btn-sc {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.print-btn {
+  padding: 10px 30px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.print-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .preview-cnt {
+    flex-direction: column;
+  }
+
+  .preview-cnt-l,
+  .preview-cnt-r {
+    width: 100%;
+  }
+}
